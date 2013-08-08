@@ -1,0 +1,15 @@
+/**
+ * 
+ */
+
+
+#notes #showMeAll { margin: 20px; width: 80%; }
+table.index thead { background-color: #f5f5f5; border-top: none; }
+table.fieldset .even:hover { background-color: #ccc; }
+
+.date-icon {
+	margin: 0px 5px;
+}
+
+
+/* BELOW IS UI-DatePicker */
