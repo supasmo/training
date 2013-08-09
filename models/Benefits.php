@@ -8,7 +8,7 @@ if (!defined('IN_CMS')) { exit(); }
 
  
 class Benefits extends Record {
-    const TABLE_NAME = 'benefits';
+    const TABLE_NAME = 'training_benefits';
 
     public $id;
     public $filter_id;

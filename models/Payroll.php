@@ -8,7 +8,7 @@ if (!defined('IN_CMS')) { exit(); }
 
  
 class Payroll extends Record {
-    const TABLE_NAME = 'payroll';
+    const TABLE_NAME = 'training_payroll';
 
     public $id;
     public $filter_id;

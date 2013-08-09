@@ -8,7 +8,7 @@ if (!defined('IN_CMS')) { exit(); }
 
  
 class Hcm extends Record {
-    const TABLE_NAME = 'hcm';
+    const TABLE_NAME = 'training_hcm';
 
     public $id;
     public $filter_id;

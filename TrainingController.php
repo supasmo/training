@@ -173,7 +173,7 @@ class TrainingController extends PluginController {
 		}
 	}
 /* Update benefits fundamentals */
-	/* public function updatebenefits(){
+	public function updatebenefitscourse(){
 			if (!isset($_POST['save'])) {
 				Flash::set('error', __('Could not update this course!'));
 			}
@@ -192,7 +192,7 @@ class TrainingController extends PluginController {
 				Flash::set('success', __('All went well.'));
 				redirect(get_url('plugin/training/benefitstask'));
 		}
-	} */
+	}
 	
 	
 /* Create new hcm fundamentals */
@@ -214,7 +214,7 @@ class TrainingController extends PluginController {
 		}
 	}
 /* Update hcm fundamentals */
-	/* public function updatehcm(){
+	public function updatehcmcourse(){
 			if (!isset($_POST['save'])) {
 				Flash::set('error', __('Could not update this HCM Fundamentals course!'));
 			}
@@ -233,7 +233,7 @@ class TrainingController extends PluginController {
 				Flash::set('success', __('All went well.'));
 				redirect(get_url('plugin/training/hcmtask'));
 		}
-	} */
+	}
 
 
 /* Create new payroll processing */
@@ -255,7 +255,7 @@ class TrainingController extends PluginController {
         }
     }
 /* Update note */
-    /* public function updatepayroll(){
+    public function updatepayrollcourse(){
             if (!isset($_POST['save'])) {
                 Flash::set('error', __('Could not update this Payroll Course!'));
             }
@@ -274,7 +274,7 @@ class TrainingController extends PluginController {
                 Flash::set('success', __('All went well.'));
                 redirect(get_url('plugin/training/payrolltask'));
         }
-    } */
+    }
 
 
 /* Create new compensation fundamentals */
@@ -296,7 +296,7 @@ class TrainingController extends PluginController {
         }
     }
 /*Update note */
-    /* public function updatecompensation(){
+    public function updatecompensationcourse(){
             if (!isset($_POST['save'])) {
                 Flash::set('error', __('Could not update this compensation course!'));
             }
@@ -315,7 +315,7 @@ class TrainingController extends PluginController {
                 Flash::set('success', __('All went well.'));
                 redirect(get_url('plugin/training/compensationtask'));
         }
-    } */
+    }
 
     
 }
