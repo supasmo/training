@@ -9,14 +9,14 @@ if (!defined('IN_CMS')) { exit(); }
 //$showcompensation = Compensation::findByIdFrom('Compensation', $compensation->getId());
 ?>
 
-<h1><?php echo __('Edit Course'); ?></h1>
+<h1><?php echo __('Edit Compensation Fundamentals Course'); ?></h1>
 
 <form action="<?php echo BASE_URL; ?>plugin/training/updatecompensationcourse" method="post">
     <fieldset style="padding:0.5em;">
         <legend style="padding: 0em 0.5em 0em 0.5em; font-weight: bold;"><?php echo __('Edit Compensation Fundamentals Course'); ?></legend>
             <table class="fieldset" cellspacing="0" cellpadding="0" border="0">
                 <tr>
-                    <td class="label"><label for="compensation-id"><?php echo __('Compensation ID'); ?></label></td>
+                    <td class="label"><label for="compensation-id"><?php echo __('Course ID'); ?></label></td>
                     <td class="field"><input type="text" readonly id="compensation-id" name="compensation[id]" class="textbox" value="<?php echo $compensation->getId(); ?>" /></td>
                 </tr>
                 <tr>

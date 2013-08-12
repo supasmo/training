@@ -22,7 +22,7 @@ if (!defined('IN_CMS')) { exit(); }
 <p class="button"><a href="<?php echo get_url('plugin/training/payrolltask');?>"><img src="<?php echo PLUGINS_URI; ?>training/images/docs.png" align="middle" alt="" /><?php echo __('View Payroll Processing');?></a></p>
 
 <h2><?php echo __('HCM Fundamentals');?></h2>
-<p class="button"><a href="<?php echo get_url('plugin/training/createnewhcm');?>"><img src="<?php echo PLUGINS_URI; ?>training/images/newnote.png" align="middle" alt="" /><?php echo __('Add HCM Fundamentals Course');?></a></p>
+<p class="button"><a href="<?php echo get_url('plugin/training/createnewhcm');?>"><img src="<?php echo PLUGINS_URI; ?>training/images/newnote.png" align="middle" alt="" /><?php echo __('Add HCM Fundamentals Courses');?></a></p>
 <p class="button"><a href="<?php echo get_url('plugin/training/hcmtask');?>"><img src="<?php echo PLUGINS_URI; ?>training/images/docs.png" align="middle" alt="" /><?php echo __('View HCM Fundamentals');?></a></p>
 
 
