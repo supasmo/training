@@ -7,4 +7,28 @@
         <status>stable</status>
     </wolf-plugin>
 	
+    <wolf-plugin>
+        <id>benefits</id>
+        <version>0.1.0</version>
+        <status>stable</status>
+    </wolf-plugin>
+	
+    <wolf-plugin>
+        <id>payroll</id>
+        <version>0.1.0</version>
+        <status>stable</status>
+    </wolf-plugin>
+	
+	<wolf-plugin>
+        <id>hcm</id>
+        <version>0.1.0</version>
+        <status>stable</status>
+	</wolf-plugin>
+	
+	<wolf-plugin>
+        <id>compensation</id>
+        <version>0.1.0</version>
+        <status>stable</status>
+	</wolf-plugin>
+	
 </wolf-plugins>

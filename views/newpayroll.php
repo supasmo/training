@@ -19,11 +19,11 @@ if (!defined('IN_CMS')) { exit(); }
                 </tr>
                 <tr>
                 	<td class="label"><label for="payroll-startdate"><?php echo __('Start Date'); ?></label></td>
-                    <td class="field"><input type="text" id="datepicker1" name="payroll[start_date]" class="date" value="<?php if (isset($payroll['start_date'])) echo $payroll['start_date']; ?>" /><img class="date-icon" src="<?php echo PLUGINS_URI; ?>/training/images/calendar.gif" alt="Calendar Date"/></td>
+                    <td class="field"><input onclick="displayDatePicker('payroll[start_date]');" type="text" id="payroll-startdate" name="payroll[start_date]" class="date" value="<?php if (isset($payroll['start_date'])) echo $payroll['start_date']; ?>" /><img onclick="displayDatePicker('payroll[start_date]');" class="date-icon" src="<?php echo PLUGINS_URI; ?>/training/images/calendar.gif" alt="Calendar Date"/></td>
                 </tr>
                 <tr>
                 	<td class="label"><label for="payroll-enddate"><?php echo __('End Date'); ?></label></td>
-                    <td class="field"><input type="text" id="datepicker2" name="payroll[end_date]" class="date" value="<?php if (isset($payroll['end_date'])) echo $payroll['end_date']; ?>" /><img class="date-icon" src="<?php echo PLUGINS_URI; ?>/training/images/calendar.gif" alt="Calendar Date"/></td>
+                    <td class="field"><input onclick="displayDatePicker('payroll[end_date]');" type="text" id="payroll-enddate" name="payroll[end_date]" class="date" value="<?php if (isset($payroll['end_date'])) echo $payroll['end_date']; ?>" /><img onclick="displayDatePicker('payroll[end_date]');" class="date-icon" src="<?php echo PLUGINS_URI; ?>/training/images/calendar.gif" alt="Calendar Date"/></td>
                 </tr>
                 
         </table>

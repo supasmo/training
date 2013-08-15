@@ -19,11 +19,11 @@ if (!defined('IN_CMS')) { exit(); }
                 </tr>
                 <tr>
                 	<td class="label"><label for="hcm-startdate"><?php echo __('Start Date'); ?></label></td>
-                    <td class="field"><input type="text" id="datepicker1" name="hcm[start_date]" class="date" value="<?php if (isset($hcm['start_date'])) echo $hcm['start_date']; ?>" /><img class="date-icon" src="<?php echo PLUGINS_URI; ?>/training/images/calendar.gif" alt="Calendar Date"/></td>
+                    <td class="field"><input onclick="displayDatePicker('hcm[start_date]');" type="text" id="hcm-startdate" name="hcm[start_date]" class="date" value="<?php if (isset($hcm['start_date'])) echo $hcm['start_date']; ?>" /><img onclick="displayDatePicker('hcm[start_date]');" class="date-icon" src="<?php echo PLUGINS_URI; ?>/training/images/calendar.gif" alt="Calendar Date"/></td>
                 </tr>
                 <tr>
                 	<td class="label"><label for="hcm-enddate"><?php echo __('End Date'); ?></label></td>
-                    <td class="field"><input type="text" id="datepicker2" name="hcm[end_date]" class="date" value="<?php if (isset($hcm['end_date'])) echo $hcm['end_date']; ?>" /><img class="date-icon" src="<?php echo PLUGINS_URI; ?>/training/images/calendar.gif" alt="Calendar Date"/></td>
+                    <td class="field"><input onclick="displayDatePicker('hcm[end_date]');" type="text" id="hcm-enddate" name="hcm[end_date]" class="date" value="<?php if (isset($hcm['end_date'])) echo $hcm['end_date']; ?>" /><img onclick="displayDatePicker('hcm[end_date]');" class="date-icon" src="<?php echo PLUGINS_URI; ?>/training/images/calendar.gif" alt="Calendar Date"/></td>
                 </tr>
                 
         </table>

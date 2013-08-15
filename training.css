@@ -2,6 +2,7 @@
  * 
  */
 
+/* Training ---------------------------------------------------------------- */
 
 #notes #showMeAll { margin: 20px; width: 80%; }
 table.index thead { background-color: #f5f5f5; border-top: none; }
@@ -11,5 +12,28 @@ table.fieldset .even:hover { background-color: #ccc; }
 	margin: 0px 5px;
 }
 
+#sidebar .training-plugin h2 {
+  margin: 0;
+  padding: 0 0 1px 0;
+  margin: 0 0 2px 0;
+  font-size: 14px;
+  border-bottom: 1px solid #ddd;
+  text-shadow: -1px 2px 2px #ddd;
+}
 
-/* BELOW IS UI-DatePicker */
+#sidebar tr p {
+	font-size: 15px;
+	margin: .6em 0 .6em;
+	padding-left: 5px;
+}
+#sidebar table { margin: 0 0 10px; }
+#sidebar th { padding: 5px 0; }
+#sidebar tr img { background-color: #00598e; border-left: 1px solid #73a9d0; padding:5px; }
+#sidebar tr img:hover { background-color: #748087;}
+#sidebar tr {
+	background-color: #0079c1;
+	border: 1px solid #fff;
+	font-size: 13px;
+	color: #fff;
+	text-shadow: 1px 0px 0px #131E2A;
+}

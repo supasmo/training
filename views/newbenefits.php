@@ -19,11 +19,11 @@ if (!defined('IN_CMS')) { exit(); }
                 </tr>
                 <tr>
                 	<td class="label"><label for="benefits-startdate"><?php echo __('Start Date'); ?></label></td>
-                    <td class="field"><input type="text" id="datepicker1" name="benefits[start_date]" class="date" value="<?php if (isset($benefits['start_date'])) echo $benefits['start_date']; ?>" /><img class="date-icon" src="<?php echo PLUGINS_URI; ?>/training/images/calendar.gif" alt="Calendar Date"/></td>
+                    <td class="field"><input onclick="displayDatePicker('benefits[start_date]');" type="text" id="benefits-startdate" name="benefits[start_date]" class="date" value="<?php if (isset($benefits['start_date'])) echo $benefits['start_date']; ?>" /><img onclick="displayDatePicker('benefits[start_date]');" class="date-icon" src="<?php echo PLUGINS_URI; ?>/training/images/calendar.gif" alt="Calendar Date"/></td>
                 </tr>
                 <tr>
                 	<td class="label"><label for="benefits-enddate"><?php echo __('End Date'); ?></label></td>
-                    <td class="field"><input type="text" id="datepicker2" name="benefits[end_date]" class="date" value="<?php if (isset($benefits['end_date'])) echo $benefits['end_date']; ?>" /><img class="date-icon" src="<?php echo PLUGINS_URI; ?>/training/images/calendar.gif" alt="Calendar Date"/></td>
+                    <td class="field"><input onclick="displayDatePicker('benefits[end_date]');" type="text" id="benefits-enddate" name="benefits[end_date]" class="date" value="<?php if (isset($benefits['end_date'])) echo $benefits['end_date']; ?>" /><img onclick="displayDatePicker('benefits[end_date]');" class="date-icon" src="<?php echo PLUGINS_URI; ?>/training/images/calendar.gif" alt="Calendar Date"/></td>
                 </tr>
                 
         </table>
@@ -32,4 +32,3 @@ if (!defined('IN_CMS')) { exit(); }
         <input class="button" type="submit" name="save" value="<?php echo __('Save'); ?>" /> or <a href="<?php echo get_url('plugin/training/benefitstask'); ?>"><?php echo __('Cancel'); ?></a>
     </p>
 </form>
-

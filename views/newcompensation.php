@@ -19,11 +19,11 @@ if (!defined('IN_CMS')) { exit(); }
                 </tr>
                 <tr>
                 	<td class="label"><label for="compensation-startdate"><?php echo __('Start Date'); ?></label></td>
-                    <td class="field"><input type="text" id="datepicker1" name="compensation[start_date]" class="date" value="<?php if (isset($compensation['start_date'])) echo $compensation['start_date']; ?>" /><img class="date-icon" src="<?php echo PLUGINS_URI; ?>/training/images/calendar.gif" alt="Calendar Date"/></td>
+                    <td class="field"><input onclick="displayDatePicker('compensation[start_date]');" type="text" id="compensation-startdate" name="compensation[start_date]" class="date" value="<?php if (isset($compensation['start_date'])) echo $compensation['start_date']; ?>" /><img onclick="displayDatePicker('compensation[start_date]');" class="date-icon" src="<?php echo PLUGINS_URI; ?>/training/images/calendar.gif" alt="Calendar Date"/></td>
                 </tr>
                 <tr>
                 	<td class="label"><label for="compensation-enddate"><?php echo __('End Date'); ?></label></td>
-                    <td class="field"><input type="text" id="datepicker2" name="compensation[end_date]" class="date" value="<?php if (isset($compensation['end_date'])) echo $compensation['end_date']; ?>" /><img class="date-icon" src="<?php echo PLUGINS_URI; ?>/training/images/calendar.gif" alt="Calendar Date"/></td>
+                    <td class="field"><input onclick="displayDatePicker('compensation[end_date]');" type="text" id="compensation-enddate" name="compensation[end_date]" class="date" value="<?php if (isset($compensation['end_date'])) echo $compensation['end_date']; ?>" /><img onclick="displayDatePicker('compensation[end_date]');" class="date-icon" src="<?php echo PLUGINS_URI; ?>/training/images/calendar.gif" alt="Calendar Date"/></td>
                 </tr>
                 
         </table>

@@ -22,11 +22,16 @@ Plugin::addController('training', __('Training Courses'), 'admin_view', true);
 // Date Format
 
 
-// Load courses model
+// Load courses models
 AutoLoader::addFile('Benefits', CORE_ROOT.'/plugins/training/models/Benefits.php');
 AutoLoader::addFile('Compensation', CORE_ROOT.'/plugins/training/models/Compensation.php');
 AutoLoader::addFile('Payroll', CORE_ROOT.'/plugins/training/models/Payroll.php');
 AutoLoader::addFile('Hcm', CORE_ROOT.'/plugins/training/models/Hcm.php');
+// Load webex courses models
+AutoLoader::addFile('Process', CORE_ROOT.'/plugins/training/models/Process.php');
+AutoLoader::addFile('Calculated', CORE_ROOT.'/plugins/training/models/Calculated.php');
+AutoLoader::addFile('Security', CORE_ROOT.'/plugins/training/models/Security.php');
+AutoLoader::addFile('Report', CORE_ROOT.'/plugins/training/models/Report.php');
 
 /* AutoLoader::addFolder(PLUGINS_ROOT . '/training/models'); */
 
@@ -85,6 +90,66 @@ function showallhcm(){
     echo '<div class="training-list">';
 	echo '<ul>';
         foreach ($hcm as $n) {
+			echo '<li><h3>'.strftime($formatEN,strtotime($n->getStartDate())).'&nbsp;-&nbsp;'; echo strftime($formatEN,strtotime($n->getEndDate())).'</h3></li>';
+        }
+	echo '</ul>';
+    echo '</div>';
+}
+
+
+// Show all business process fundamentals courses in frontend
+function showallprocess(){
+    $process = Process::findAllFrom('Process', 'id=id ORDER BY title DESC');
+	
+	$formatEN = '%A, %d %B %Y';
+    echo '<div class="training-list">';
+	echo '<ul>';
+        foreach ($process as $n) {
+			echo '<li><h3>'.strftime($formatEN,strtotime($n->getStartDate())).'&nbsp;-&nbsp;'; echo strftime($formatEN,strtotime($n->getEndDate())).'</h3></li>';
+        }
+	echo '</ul>';
+    echo '</div>';
+}
+
+
+// Show all Calculated Fields courses in frontend
+function showallcalculated(){
+    $calculated = Calculated::findAllFrom('Calculated', 'id=id ORDER BY title DESC');
+	
+	$formatEN = '%A, %d %B %Y';
+    echo '<div class="training-list">';
+	echo '<ul>';
+        foreach ($calculated as $n) {
+			echo '<li><h3>'.strftime($formatEN,strtotime($n->getStartDate())).'&nbsp;-&nbsp;'; echo strftime($formatEN,strtotime($n->getEndDate())).'</h3></li>';
+        }
+	echo '</ul>';
+    echo '</div>';
+}
+
+
+// Show all Configurable Security Fundamentals courses in frontend
+function showallsecurity(){
+    $security = Security::findAllFrom('Security', 'id=id ORDER BY title DESC');
+	
+	$formatEN = '%A, %d %B %Y';
+    echo '<div class="training-list">';
+	echo '<ul>';
+        foreach ($security as $n) {
+			echo '<li><h3>'.strftime($formatEN,strtotime($n->getStartDate())).'&nbsp;-&nbsp;'; echo strftime($formatEN,strtotime($n->getEndDate())).'</h3></li>';
+        }
+	echo '</ul>';
+    echo '</div>';
+}
+
+
+// Show all Report Writer courses in frontend
+function showallreport(){
+    $report = Report::findAllFrom('Report', 'id=id ORDER BY title DESC');
+	
+	$formatEN = '%A, %d %B %Y';
+    echo '<div class="training-list">';
+	echo '<ul>';
+        foreach ($report as $n) {
 			echo '<li><h3>'.strftime($formatEN,strtotime($n->getStartDate())).'&nbsp;-&nbsp;'; echo strftime($formatEN,strtotime($n->getEndDate())).'</h3></li>';
         }
 	echo '</ul>';
