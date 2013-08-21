@@ -54,7 +54,7 @@ function showallbenefits(){
 
 // Show all compensation courses in frontend
 function showallcompensation(){
-    $compensation = Compensation::findAllFrom('Compensation', 'id=id ORDER BY title DESC');
+    $compensation = Compensation::findAllFrom('Compensation', 'id=id ORDER BY start_date ASC');
     
 	$formatEN = '%A, %d %B %Y';
     echo '<div class="training-list">';
@@ -69,7 +69,7 @@ function showallcompensation(){
 
 // Show all payrolls in frontend
 function showallpayroll(){
-    $payroll = Payroll::findAllFrom('Payroll', 'id=id ORDER BY title DESC');
+    $payroll = Payroll::findAllFrom('Payroll', 'id=id ORDER BY start_date ASC');
 
 	$formatEN = '%A, %d %B %Y';
     echo '<div class="training-list">';
@@ -84,7 +84,7 @@ function showallpayroll(){
 
 // Show all HCM fundamentals courses in frontend
 function showallhcm(){
-    $hcm = Hcm::findAllFrom('Hcm', 'id=id ORDER BY title DESC');
+    $hcm = Hcm::findAllFrom('Hcm', 'id=id ORDER BY start_date ASC');
 	
 	$formatEN = '%A, %d %B %Y';
     echo '<div class="training-list">';
@@ -99,7 +99,7 @@ function showallhcm(){
 
 // Show all business process fundamentals courses in frontend
 function showallprocess(){
-    $process = Process::findAllFrom('Process', 'id=id ORDER BY title DESC');
+    $process = Process::findAllFrom('Process', 'id=id ORDER BY start_date ASC');
 	
 	$formatEN = '%A, %d %B %Y';
     echo '<div class="training-list">';
@@ -114,7 +114,7 @@ function showallprocess(){
 
 // Show all Calculated Fields courses in frontend
 function showallcalculated(){
-    $calculated = Calculated::findAllFrom('Calculated', 'id=id ORDER BY title DESC');
+    $calculated = Calculated::findAllFrom('Calculated', 'id=id ORDER BY start_date ASC');
 	
 	$formatEN = '%A, %d %B %Y';
     echo '<div class="training-list">';
@@ -129,7 +129,7 @@ function showallcalculated(){
 
 // Show all Configurable Security Fundamentals courses in frontend
 function showallsecurity(){
-    $security = Security::findAllFrom('Security', 'id=id ORDER BY title DESC');
+    $security = Security::findAllFrom('Security', 'id=id ORDER BY start_date ASC');
 	
 	$formatEN = '%A, %d %B %Y';
     echo '<div class="training-list">';
@@ -144,7 +144,7 @@ function showallsecurity(){
 
 // Show all Report Writer courses in frontend
 function showallreport(){
-    $report = Report::findAllFrom('Report', 'id=id ORDER BY title DESC');
+    $report = Report::findAllFrom('Report', 'id=id ORDER BY start_date ASC');
 	
 	$formatEN = '%A, %d %B %Y';
     echo '<div class="training-list">';
