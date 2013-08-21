@@ -8,11 +8,11 @@ Plugin::setInfos(array(
     'id'          => 'training',
     'title'       => __('Training Courses'),
     'description' => __('Add OSV Training Courses'),
-    'version'     => '0.1.0',
+    'version'     => '0.1.1',
     'license'     => 'GPL',
     'author'      => 'OneSource Virtual',
     'website'     => 'http://www.onesourcevirtual.com',
-    'update_url'  => '',
+    'update_url'  => CORE_ROOT.'/plugins/training/plugin-versions.xml',
     'require_wolf_version' => '0.7.3'
 ));
 
