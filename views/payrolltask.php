@@ -32,7 +32,7 @@ if (!defined('IN_CMS')) { exit(); }
             <td><?php echo $courses->getEndDate(); ?></td>
             <td><?php echo $courses->getUpdate(); ?></td>
             <td align="right"><a href="<?php echo get_url('plugin/training/updatepayroll/'.$courses->id); ?>"><img src="<?php echo PLUGINS_URI; ?>/training/images/edit.gif" alt="Edit" /></a></td>
-            <td><a href="<?php echo get_url('plugin/training/deletpayroll/'.$courses->id); ?>"><img src="<?php echo PLUGINS_URI; ?>/training/images/trash.gif" alt="Delete" /></a></td>
+            <td><a href="<?php echo get_url('plugin/training/deletepayroll/'.$courses->id); ?>"><img src="<?php echo PLUGINS_URI; ?>/training/images/trash.gif" alt="Delete" /></a></td>
         </tr>
         <?php } ?>
     </table>
